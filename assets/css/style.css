@@ -9,9 +9,9 @@
  */
 html,
 body {
-  background-color: #111;
-  color: #eee;
-  font-family: "GEETYPE";
+  background-color: #000;
+  color: #0f0;
+  font-family: "GEETYPE", monospace;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -21,19 +21,29 @@ body {
   user-select: none;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
+  text-shadow: 0 0 5px #0f0;
 }
 
 .textButton {
   display: flex;
   align-content: center;
-  color: #444;
-  border: none;
+  color: #0f0;
+  border: 1px solid #0f0;
+  border-radius: 5px;
   cursor: pointer;
   height: min-content;
   width: min-content;
   text-align: center;
   font-size: 0.27rem;
   transition: 0.125s;
+  padding: 0.05rem 0.1rem;
+  box-shadow: 0 0 5px #0f0;
+}
+
+.textButton:hover {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 
 .textButton .text {
@@ -46,6 +56,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.25rem;
+  border: 1px solid #0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0f0;
 }
 
 #top {
@@ -57,6 +70,7 @@ body {
   font-weight: normal;
   cursor: pointer;
   text-align: left;
+  text-shadow: 0 0 5px #0f0;
 }
 
 #top .logo .text {
@@ -67,6 +81,7 @@ body {
 #center {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .score {
@@ -74,6 +89,7 @@ body {
   width: 100%;
   z-index: 10;
   margin-top: 0.7rem;
+  text-shadow: 0 0 5px #0f0;
 }
 
 .score .count {
@@ -82,17 +98,14 @@ body {
   transform: scale(1);
   margin: 0 auto;
   font-size: 1.5rem;
+  text-shadow: 0 0 10px #0f0;
 }
 
 .score .subtitle {
   font-size: 0.5rem;
-  color: #444;
+  color: #0f0;
   line-height: 0.7rem;
-}
-
-#center {
-  display: flex;
-  justify-content: center;
+  text-shadow: 0 0 5px #0f0;
 }
 
 #center .woodenFish {
@@ -102,14 +115,24 @@ body {
   cursor: pointer;
   transition: all 0.1s cubic-bezier(0.5, 0.35, 0.15, 1.4);
   transform: scale(1);
+  border: 1px solid #0f0;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 5px #0f0;
+}
+
+#center .woodenFish:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 
 #bottom {
-  color: #444;
+  color: #0f0;
   font-size: 0.2rem;
   padding: 0 0.08rem;
   position: relative;
   text-align: center;
+  text-shadow: 0 0 5px #0f0;
 }
 
 #bottom .keyTips {
@@ -119,12 +142,13 @@ body {
 }
 
 #bottom .keyTips key {
-  color: #111;
-  background-color: #444;
+  color: #000;
+  background-color: #0f0;
   margin: 0.09rem 0.12rem;
   border-radius: 0.09rem;
   padding: 0.05rem 0.13rem;
   line-height: 0.2rem;
+  box-shadow: 0 0 5px #0f0;
 }
 
 #bottom .leftRight {
@@ -139,7 +163,8 @@ body {
 }
 
 #bottom .left:hover {
-  color: #eee;
+  color: #fff;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 
 #bottom .right a {
@@ -147,33 +172,38 @@ body {
 }
 
 #bottom .textButton:hover {
-  color: #eee;
+  color: #000;
 }
 
 .autoClick {
   margin-left: 0.17rem;
   text-decoration: underline;
   padding: 0.08rem;
-  border: 1px solid transparent;
+  border: 1px solid #0f0;
+  border-radius: 0.06rem;
   cursor: pointer;
+  box-shadow: 0 0 5px #0f0;
 }
 
 .autoClick.confirm {
   text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #000;
+  background-color: #0f0;
+  border: 1px solid #0f0;
   border-radius: 0.06rem;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 
 .subtitleCountTip {
   height: 0.6rem;
   line-height: 0.6rem;
-  color: #ffffff;
+  color: #0f0;
   position: absolute;
   left: 50%;
   font-size: 0.27rem;
   animation: countTipMove 1s;
   opacity: 0;
+  text-shadow: 0 0 5px #0f0;
 }
 
 @keyframes countTipMove {
@@ -207,8 +237,9 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
-  color: #eee;
+  color: #0f0;
   font-size: 0.34rem;
+  text-shadow: 0 0 5px #0f0;
 }
 
 .advert {
@@ -218,7 +249,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   display: none;
   justify-content: center;
@@ -230,21 +261,21 @@ body {
 
 @keyframes shake {
   0% {
-      transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+    transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
   25% {
-      transform: perspective(500px) rotateX(5deg) rotateY(-5deg)
-          rotateZ(-5deg) scale(0.95);
+    transform: perspective(500px) rotateX(5deg) rotateY(-5deg)
+      rotateZ(-5deg) scale(0.95);
   }
   50% {
-      transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+    transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
   75% {
-      transform: perspective(500px) rotateX(-5deg) rotateY(5deg) rotateZ(5deg)
-          scale(0.95);
+    transform: perspective(500px) rotateX(-5deg) rotateY(5deg) rotateZ(5deg)
+      scale(0.95);
   }
   100% {
-      transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+    transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0) scale(1);
   }
 }
 
@@ -254,7 +285,9 @@ body {
 
 .advert .img img {
   animation: shake 2s infinite;
-  box-shadow: #e6e6e6 1px 3px 3px 1px;
+  box-shadow: #0f0 1px 3px 3px 1px;
+  border: 1px solid #0f0;
+  border-radius: 5px;
 }
 
 .advert .close {
@@ -265,11 +298,18 @@ body {
 
 .advert .close .text {
   display: inline-block;
-  border: 1px solid #000000;
+  border: 1px solid #0f0;
   font-size: 16px;
-  color: #000000;
+  color: #0f0;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 0 5px #0f0;
+}
+
+.advert .close .text:hover {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 
 @media screen and (min-width: 768px) {
