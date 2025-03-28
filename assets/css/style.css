@@ -1,15 +1,15 @@
 /**
  * @description:
- * nickName: 在虎
- * email: caiths@icloud.com
- * wechat: ConsoleWarn
+ * nickName: Hoshinoai
+ * email: 1697391069@qq.com
+ * wechat: 星野爱
  * 尊重原创，请保留版权！
- * @author mdo
- * @date 2024/02/02
+ * @author H.Ai
+ * @date 2025/03/28
  */
 html,
 body {
-  background-color: #000;
+  background: linear-gradient(to bottom, #000 0%, #0f0f0f 100%);
   color: #0f0;
   font-family: "GEETYPE", monospace;
   overflow: hidden;
@@ -43,6 +43,18 @@ body {
 .textButton:hover {
   background-color: #0f0;
   color: #000;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+/* 为a标签添加电子赛博配色 */
+a {
+  color: #0f0;
+  text-decoration: none;
+  text-shadow: 0 0 5px #0f0;
+}
+
+a:hover {
+  color: #000;
+  background-color: #0f0;
   box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
 }
 

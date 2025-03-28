@@ -1,6 +1,6 @@
 # 电子木鱼Web版
 
-![image](/screensort.jpeg)
+![image](https://images.hoshinoai.xin/web/muyu.webp)
 > 佛曰：“1001011000111111 101111100100101 1001011001000000 100111101011011”
 
 ## 仿生佛祖会梦见电子木鱼吗？
@@ -22,7 +22,7 @@
 将源码拉到本地：
 
 ```
-git clone https://github.com/poboll/fish.git
+git clone https://github.com/Calculusai/muyu.git
 ```
 
 或下载`.zip`压缩包，并解压到本地：
@@ -35,6 +35,6 @@ https://github.com/poboll/fish/archive/refs/heads/main.zip
 
 ## 在线访问
 
-[个人网站](https://fish.caiths.com)
+[个人网站](https://muyu.hoshinoai.xin)
 
-[GitHub Page](https://poboll.github.io/fish)
+[GitHub 主页](https://github.com/Calculusai)

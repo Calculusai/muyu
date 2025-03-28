@@ -1,11 +1,11 @@
 /**
  * @description:
- * nickName: 在虎
- * email: caiths@icloud.com
- * wechat: ConsoleWarn
+ * nickName: Hoshinoai
+ * email: 1697391069@qq.com
+ * wechat: 星野爱
  * 尊重原创，请保留版权！
- * @author mdo
- * @date 2024/02/02
+ * @author H.Ai
+ * @date 2025/03/28
  */
 const sound = new Howl({ src: ["./assets/video/sound.mp3"] });
 const bgm = new Howl({
